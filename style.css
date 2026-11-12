@@ -1,7 +1,7 @@
 /*CSS written by Andrew Jaszlics*/
 
 /*GLOBAL STYLES (MOBILE FIRST)*/
-
+header, footer {background-color: lightgray;}
 nav ul{
     display:flex;
     justify-content:space-around;
@@ -12,7 +12,7 @@ nav ul{
 }
 nav a {
     text-decoration:none;
-    background-color: lightgray;
+    background-color: aqua;
     color: blue;
     font-size: 1.5rem;
     font-weight: bold;
