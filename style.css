@@ -1,25 +1,62 @@
 /*CSS written by Andrew Jaszlics*/
 
 /*GLOBAL STYLES (MOBILE FIRST)*/
+
+nav ul{
+    display:flex;
+    justify-content:space-around;
+    list-style:none;
+    gap: .5rem;
+    padding-top:1rem;
+    padding-bottom:.5rem;
+}
+nav a {
+    text-decoration:none;
+    background-color: lightgray;
+    color: blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: black;
+    color: white;
+}
 body {
     display:grid;
-    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
     background-color:lightblue;
+    margin:5px;
+    .card-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
     
 }
 @media screen and (min-width: 600px) {
 body {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    background-color:lightblue;
-    
-}
-}
-@media screen and (min-width:800px) {
- body {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color:lightblue;
+     .card-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }    .card {
+        flex: 1 1 45%;
     }
 }
+}
+@media screen and (min-width: 800px) {
+
+    .card {
+        flex: 1 1 30%;
+    }
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
     
