@@ -1,0 +1,25 @@
+/*CSS written by Andrew Jaszlics*/
+
+/*GLOBAL STYLES (MOBILE FIRST)*/
+body {
+    display:grid;
+    grid-template-columns: 1fr;
+    background-color:lightblue;
+    
+}
+@media screen and (min-width: 600px) {
+body {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:lightblue;
+    
+}
+}
+@media screen and (min-width:800px) {
+ body {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:lightblue;
+    }
+}
+    
